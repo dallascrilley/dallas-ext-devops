@@ -1,0 +1,42 @@
+{
+  "version": "2.0",
+  "skills": {
+    "deploy-verify": {
+      "description": "Post-deploy verification with health checks and smoke tests",
+      "priority": 7,
+      "triggers": {
+        "keywords": ["deploy", "verify", "health check", "smoke test"],
+        "keywordPatterns": ["\\bdeploy\\b", "\\bhealth.check\\b", "\\bsmoke.test"],
+        "intentPatterns": [
+          "(?:deploy|release).*(?:verify|check|validate|smoke)",
+          "(?:verify|check).*(?:deploy|release|staging|production)",
+          "(?:run).*(?:smoke|health).*(?:test|check)"
+        ]
+      }
+    },
+    "deploy-docs": {
+      "description": "Deploy documentation or static site to GitHub Pages",
+      "priority": 5,
+      "triggers": {
+        "keywords": ["deploy docs", "github pages", "static site"],
+        "keywordPatterns": ["deploy.*doc", "github.pages", "static.site"],
+        "intentPatterns": [
+          "(?:deploy|publish).*(?:doc|documentation|site|pages)",
+          "(?:github pages).*(?:deploy|publish|update)"
+        ]
+      }
+    },
+    "rclone": {
+      "description": "S3/R2/B2 file transfer patterns using rclone",
+      "priority": 5,
+      "triggers": {
+        "keywords": ["s3", "r2", "b2", "rclone", "file transfer", "sync"],
+        "keywordPatterns": ["\\bs3\\b", "\\br2\\b", "\\bb2\\b", "\\brclone\\b"],
+        "intentPatterns": [
+          "(?:upload|download|sync|transfer).*(?:s3|r2|b2|bucket|storage)",
+          "(?:rclone).*(?:sync|copy|move|config)"
+        ]
+      }
+    }
+  }
+}
