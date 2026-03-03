@@ -1,6 +1,6 @@
 {
   "name": "dallas-ext-devops",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Deployment, infrastructure, and file transfer tooling for Claude Code. Provides deployment workflows, rclone integration, and safety rules.",
   "author": {
     "name": "Dallas Crilley"

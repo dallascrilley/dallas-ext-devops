@@ -37,6 +37,18 @@
           "(?:rclone).*(?:sync|copy|move|config)"
         ]
       }
+    },
+    "github-ci-setup": {
+      "description": "Standard GitHub CI/CD infrastructure setup",
+      "priority": 6,
+      "triggers": {
+        "keywords": ["github ci", "ci setup", "pr template", "repo setup", "labels setup", "pr conventions", "branch protection", "stale prs", "pr title"],
+        "keywordPatterns": ["\\bgithub.*ci\\b", "\\bpr.*template\\b", "\\brepo.*setup\\b", "\\bbranch.*protect\\b"],
+        "intentPatterns": [
+          "(?:set up|setup|configure|scaffold|create).*(?:github|ci|cd|workflow|pr template|repository|branch protection)",
+          "(?:new repo|new repository).*(?:setup|scaffold|configure)"
+        ]
+      }
     }
   }
 }

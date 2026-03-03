@@ -5,7 +5,7 @@
 ## Structure
 
 - `commands/` — deploy-docs and deploy-verify commands
-- `skills/` — rclone file transfer skill
+- `skills/` — rclone file transfer skill, github-ci-setup infrastructure scaffolding
 - `agents/` — deployment-verification agent
 - `rules/` — deploy-safety conventions
 
